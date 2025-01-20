@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,80 +7,110 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            margin: 20px;
         }
-        .container {
-            width: 80%;
-            max-width: 900px;
+        .resume {
+            max-width: 800px;
             margin: 0 auto;
-            background-color: #fff;
+            border: 1px solid #ddd;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #f9f9f9;
         }
-        h1, h2 {
-            color: #333;
-        }
-        h1 {
-            font-size: 30px;
+        .header {
             text-align: center;
         }
-        .contact-info {
+        .photo {
+            float: right;
+            margin-left: 20px;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+        }
+        .contact-info, .education, .experience, .skills, .academic-table {
             margin-bottom: 20px;
         }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        .section-title {
-            font-size: 22px;
-            margin-top: 20px;
-            color: #444;
-        }
-        .list-item {
-            margin-bottom: 10px;
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
         ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
         }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <h1>Aadish Pandey</h1>
-        <div class="contact-info">
-            <p>Email=aadishpandey36@gmail com</p>
-            <p>Phone: +91 9120310681</p>
-            <p>Website: www.johndoe.com</p>
+    <div class="resume">
+        <div class="header">
+            <h1> Aadish Pandey</h1>
+            <p>Software Engineer</p>
         </div>
-
-         
-
+        <img src="photo.jpg" alt="adish" class="photo">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Email: adishpandey36@gmail.com</p>
+            <p>Phone: (91)  9120310681</p>
+            <p>Address: Pune, India</p>
+        </div>
         <div class="education">
-            <h2 class="section-title">Education</h2>
+            <h2>Education</h2>
             <ul>
-                <li class="list-item">
-                    <strong>Bachelor of Science in Computer Science</strong><br>
-                    <em> Pimpri chinchwad University , </em>
-                      <li class="list-item">High school passed with 91.2 %</li>
-                <li class="list-item">Entermidiate passed with 89.7 %
-                </li>
+                <li><strong>Bachelor of Science in Computer Science</strong>, Pimpri Chinchwad University, 2024</li>
             </ul>
         </div>
-
+        <div class="academic-table">
+            <h2>Academic Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>Percentage/CGPA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Class 10th</td>
+                        <td>91.2%</td>
+                    </tr>
+                    <tr>
+                        <td>Class 12th</td>
+                        <td>87.2%</td>
+                    </tr>
+                    <tr>
+                        <td>Semester 1 CGPA</td>
+                        <td>8.72</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
         <div class="skills">
-            <h2 class="section-title">Skills</h2>
+            <h2>Skills</h2>
             <ul>
-               <li> Fundamental of cyber security </li>
-                <li class="list-item">HTML, CSS, JavaScript, React</li>
-                <li class="list-item">Version Control </li>
-                
+                <li>HTML, CSS, JavaScript</li>
+                <li>Python, Java</li>
+                <li>React, Node.js</li>
             </ul>
         </div>
     </div>
-
 </body>
 </html>
